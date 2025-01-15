@@ -23,4 +23,10 @@ deactivate
 
 # 가상환경 활성화 후
 pip install selenium
+
+# 가상환경 세팅 내보내기
+pip freeze > requirements.txt
+
+# 가상환경 가져오기
+pip install -r requirements.txt
 ```
