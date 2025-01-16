@@ -9,6 +9,7 @@ pip list
 # 가상환경 생성
 # 생성할 폴더로 이동후
 # foldername에는 폴더명을 입력
+# 관행상 venv로 많이 만든다
 python -m virtualenv ${folderName}
 
 # 에러 발생시 powershell에서
@@ -22,7 +23,7 @@ set-executionpolicy unrestricted
 deactivate
 
 # 가상환경 활성화 후
-pip install selenium
+pip install selenium chromedriver_autoinstaller
 
 # 가상환경 세팅 내보내기
 pip freeze > requirements.txt
